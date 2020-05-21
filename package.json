@@ -1,0 +1,25 @@
+{
+  "name": "meetwebpack",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/zhangyunpeng0506/zhangyunpeng0506.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangyunpeng0506/zhangyunpeng0506.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangyunpeng0506/zhangyunpeng0506.github.io/issues"
+  },
+  "homepage": "https://github.com/zhangyunpeng0506/zhangyunpeng0506.github.io#readme",
+  "devDependencies": {
+    "css-loader": "^3.5.3",
+    "style-loader": "^1.2.1",
+    "webpack": "^3.6.0"
+  }
+}
