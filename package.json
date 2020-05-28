@@ -1,25 +1,18 @@
 {
-  "name": "meetwebpack",
-  "version": "1.0.0",
-  "description": "You can use the [editor on GitHub](https://github.com/zhangyunpeng0506/zhangyunpeng0506.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.",
-  "main": "webpack.config.js",
+  "name": "zhangyunpeng0506.github.io",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zhangyunpeng0506/zhangyunpeng0506.github.io.git"
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zhangyunpeng0506/zhangyunpeng0506.github.io/issues"
-  },
-  "homepage": "https://github.com/zhangyunpeng0506/zhangyunpeng0506.github.io#readme",
   "devDependencies": {
-    "css-loader": "^3.5.3",
-    "style-loader": "^1.2.1",
-    "webpack": "^3.6.0"
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "vue-template-compiler": "^2.6.11"
   }
 }
