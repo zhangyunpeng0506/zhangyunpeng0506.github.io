@@ -11,7 +11,7 @@
 export default {
   methods:{
     btnAbout(){
-      this.$router.replace('/home')
+      this.$router.replace({path:'/home'})
     }
   }
 }
