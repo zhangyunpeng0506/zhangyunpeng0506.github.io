@@ -5,6 +5,10 @@ Vue.use(VueRouter)
 
 //路由映射表
 const routes = [
+  {
+    path:'/',
+    redirect:'/home'
+  },
   { 
     path: '/home',
     component: () => import('@/pages/home/Home'),
@@ -15,6 +19,12 @@ const routes = [
       next()
     },
     afterEnter(to,from){}
+  },{
+    path:'*',
+    component: ()=>import('@/components/error/404'),
+    meta:{
+      title:'ERROR'
+    }
   }
 ]
 

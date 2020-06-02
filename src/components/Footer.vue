@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <el-footer>
+  <div class="footer">
+    <footer>
       Powered by: zyp Copyright © 2020
-    </el-footer>
+    </footer>
   </div>
 </template>
 
@@ -12,6 +12,13 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="less" scoped>
+  .footer{
+    position: fixed;
+    margin: 5px 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
 </style>
