@@ -9,13 +9,13 @@
 <script>
 
 import Header from '@/components/header/Header'
-import Footer from './components/Footer'
+import Footer from '@/components/Footer'
 
 export default {
   name: 'App',
   components:{
     Header,
-    Footer
+    Footer,
   }
 }
 </script>
