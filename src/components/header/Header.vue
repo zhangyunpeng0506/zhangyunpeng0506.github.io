@@ -1,10 +1,8 @@
 <template>
   <div class="header">
-    <header>
-      <header-tab :name="'首页'"/>
-      <header-tab :name="'关于'"/>
-      <header-tab :name="'我的'"/>
-    </header>
+    <header-tab :name="'首页'" :path="'/home'"/>
+    <header-tab :name="'关于'"/>
+    <header-tab :name="'我的'" :path="'/profile'"/>
   </div>
 </template>
 

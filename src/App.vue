@@ -23,7 +23,7 @@ export default {
 <style lang="less" scoped>
   #app{
     margin: 0;
-    padding: 5px;
+    padding: 0 10px 5px;
     display: flex;
     flex-direction: column;
   }

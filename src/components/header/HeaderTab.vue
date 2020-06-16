@@ -1,5 +1,5 @@
 <template>
-  <div class="item">
+  <div class="item" @click="itemClick">
     {{name}}
   </div>
 </template>
@@ -11,9 +11,18 @@ export default {
       type: String,
       default: ''
     },
+    path:{
+      type: String,
+      default: '/'
+    },
     icon:{
       type: String,
       default: ''
+    }
+  },
+  methods:{
+    itemClick(){
+      this.$router.replace(this.path)
     }
   }
 }

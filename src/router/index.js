@@ -20,6 +20,12 @@ const routes = [
     },
     afterEnter(to,from){}
   },{
+    path: '/profile',
+    component: () => import('@/pages/profile/Profile'),
+    meta:{
+      title: '我的'
+    }
+  },{
     path:'*',
     component: ()=>import('@/components/error/404'),
     meta:{
