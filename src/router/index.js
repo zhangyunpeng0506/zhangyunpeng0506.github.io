@@ -1,50 +1,23 @@
 import VueRouter from 'vue-router'
 import Vue from 'vue'
+import routes from './routers'
+import { setTitle } from '@/utils/app'
 
 Vue.use(VueRouter)
 
-//路由映射表
-const routes = [
-  {
-    path:'/',
-    redirect:'/home'
-  },
-  { 
-    path: '/home',
-    component: () => import('@/pages/home/Home'),
-    meta:{
-      title: '首页'
-    },
-    beforeEnter(to,from,next){
-      next()
-    },
-    afterEnter(to,from){}
-  },{
-    path: '/profile',
-    component: () => import('@/pages/profile/Profile'),
-    meta:{
-      title: '我的'
-    }
-  },{
-    path:'*',
-    component: ()=>import('@/components/error/404'),
-    meta:{
-      title:'ERROR'
-    }
-  }
-]
-
 const router = new VueRouter({
   routes,
-  mode: 'history'
+  base: '',
+  mode: 'history' // hash是#号
 })
 
-//路由钩子
-router.beforeEach((to,from,next)=>{
-  document.title = to.matched[0].meta.title //显示根路径的title
+// 路由钩子
+router.beforeEach((to, from, next) => {
   next()
 })
 
-router.afterEach((to,from)=>{})
+router.afterEach((to, from) => {
+  setTitle(to)
+})
 
-export default router 
+export default router

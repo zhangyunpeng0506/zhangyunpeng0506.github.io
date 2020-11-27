@@ -1,32 +1,28 @@
 <template>
   <div id="app">
-    <Header/>
     <router-view/>
-    <Footer/>
   </div>
 </template>
 
 <script>
 
-import Header from '@/components/header/Header'
-import Footer from '@/components/Footer'
-
 export default {
-  name: 'App',
-  components:{
-    Header,
-    Footer,
-  }
+  name: 'App'
 }
 </script>
 
-<style lang="less" scoped>
-  #app{
-    margin: 0;
-    padding: 0 10px 5px;
-    display: flex;
-    flex-direction: column;
+<style lang="less">
+  .size {
+    width: 100%;
+    height: 100%;
   }
-</style>>
-
+  html, body {
+    .size;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  #app {
+    .size
+  }
 </style>
