@@ -10,12 +10,12 @@ module.exports = {
       .set('@', resolve('src'))
       .set('_c', resolve('src/components'))
   },
-  productionSourceMap: false, //打包时不生成.map文件
+  productionSourceMap: false, // 打包时不生成.map文件
 
   devServer: {
-    host: '0.0.0.0', 
+    host: '0.0.0.0',
     port: 8081,
     open: true,
-    proxy: null,
+    proxy: null
   }
 }
