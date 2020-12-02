@@ -1,7 +1,8 @@
 import VueRouter from 'vue-router'
 import Vue from 'vue'
 import routes from './routers'
-import { setTitle } from '@/utils/app'
+import store from '@/store'
+import { setTitle, getMenus } from '@/utils/app'
 
 Vue.use(VueRouter)
 
@@ -13,6 +14,10 @@ const router = new VueRouter({
 
 // 路由钩子
 router.beforeEach((to, from, next) => {
+  if (store.state.app.menus.length === 0) {
+    // store.dispatch('getMenus')
+    store.commit('set_menus', getMenus(routes))
+  }
   next()
 })
 

@@ -1,0 +1,41 @@
+<template>
+  <div class="navbar-container">
+    <el-link
+      v-show="!collapsed"
+      :underline="false"
+      icon="el-icon-s-fold"
+      style="font-size:22px"
+      @click.native="handleCollapsedChange"/>
+    <el-link
+      v-show="collapsed"
+      :underline="false"
+      icon="el-icon-s-unfold"
+      style="font-size:22px"
+      @click.native="handleCollapsedChange"/>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    collapsed: {
+      type: Boolean,
+      default: false
+    }
+  },
+  methods: {
+    handleCollapsedChange() {
+      this.$emit('on-coll-change', !this.collapsed)
+    }
+  }
+}
+</script>
+
+<style lang="less" scoped>
+  .navbar-container{
+    height: 44px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+  }
+</style>

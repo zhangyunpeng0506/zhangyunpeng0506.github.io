@@ -1,0 +1,72 @@
+[
+  {
+    "path": "/home",
+    "title": "首页",
+    "icon": "el-icon-s-home",
+    "children": []
+  },
+  {
+    "path": "/learn",
+    "title": "学习笔记",
+    "icon": "el-icon-notebook-1",
+    "children": [
+      {
+        "path": "/vue",
+        "title": "vue",
+        "icon": "el-icon-help"
+      },
+      {
+        "path": "/es6",
+        "title": "es6",
+        "icon": "el-icon-help"
+      },
+      {
+        "path": "/git",
+        "title": "git",
+        "icon": "el-icon-help"
+      },
+      {
+        "path": "/ajax",
+        "title": "ajax",
+        "icon": "el-icon-help"
+      },
+      {
+        "path": "/typescript",
+        "title": "typescript",
+        "icon": "el-icon-help"
+      },
+      {
+        "path": "/less",
+        "title": "less",
+        "icon": "el-icon-help"
+      },
+      {
+        "path": "/scss",
+        "title": "scss",
+        "icon": "el-icon-help"
+      },
+      {
+        "path": "/webpack",
+        "title": "webpack",
+        "icon": "el-icon-help"
+      },
+      {
+        "path": "/regular",
+        "title": "regular",
+        "icon": "el-icon-help"
+      }
+    ]
+  },
+  {
+    "path": "/questions",
+    "title": "问题归纳",
+    "icon": "el-icon-question",
+    "children": [
+      {
+        "path": "/bower",
+        "title": "浏览器",
+        "icon": "el-icon-help"
+      }
+    ]
+  }
+]
