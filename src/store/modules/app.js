@@ -1,28 +1,56 @@
 import $http from '@/http'
-import Cookies from 'js-cookie'
+import routes from '@/router/routers'
+import config from '@/config'
+import { routeHasExit, getMenusByRouter } from '@/utils/app'
 
 const app = {
   state: {
     version: 'v1.0.0',
     baseUrl: '',
-    menus: []
+    menus: [],
+    tagList: [],
+    activeTag: ''
   },
   mutations: {
-    set_menus(state, menus) {
+    SET_MENUS(state, menus) {
       state.menus = menus
-      Cookies.set('menus', menus)
+    },
+    SET_ACTIVE_TAG(state, route) {
+      state.activeTag = route
+    },
+    ADD_TAG(state, route) {
+      if (!routeHasExit(state.tagList, route)) {
+        state.tagList.push(route)
+      }
+      if (!routeHasExit(state.tagList, { name: 'home' })) {
+        state.tagList.unshift({
+          path: '/home',
+          name: 'home',
+          meta: {
+            title: '首页',
+            affix: true,
+            icon: 'el-icon-s-home'
+          }
+        })
+      }
+    },
+    CLOSE_TAG(state, route) {
+      const index = state.tagList.findIndex(item => item.name === route.name)
+      if (index > -1) {
+        state.tagList.splice(index, 1)
+      }
     }
   },
   actions: {
     getMenus({ commit }) {
-      if (JSON.parse(Cookies.get('menus')).length > 0) {
-        commit('set_menus', JSON.parse(Cookies.get('menus')))
-      } else {
-        $http.get('get_menus', {}).then(res => {
+      if (config.useDBMenu) {
+        $http.get('get_menus').then(res => {
           if (res.success) {
-            commit('set_menus', res.data)
+            commit('SET_MENUS', res.data)
           }
         })
+      } else {
+        commit('SET_MENUS', getMenusByRouter(routes))
       }
     }
   }

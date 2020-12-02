@@ -1,3 +1,4 @@
 export default {
-  baseUrl: ''
+  baseUrl: '',
+  useDBMenu: false
 }

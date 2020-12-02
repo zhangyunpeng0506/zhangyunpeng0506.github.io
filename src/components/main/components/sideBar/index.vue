@@ -10,6 +10,7 @@
       <el-menu
         :collapse="collapsed"
         :collapse-transition="false"
+        :default-active="$store.state.app.activeTag.path"
         router
         background-color="#545c64"
         text-color="#fff"
@@ -37,6 +38,11 @@ export default {
   data() {
     return {
       menus: this.$store.state.app.menus
+    }
+  },
+  watch: {
+    '$store.state.app.menus'() {
+      this.menus = this.$store.state.app.menus
     }
   }
 }

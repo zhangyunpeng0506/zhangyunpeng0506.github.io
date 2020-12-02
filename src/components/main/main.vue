@@ -26,6 +26,7 @@ import sideBar from './components/sideBar'
 import navBar from './components/navBar'
 import tagsView from './components/tagsView'
 import appMain from './components/appMain'
+import { mapMutations } from 'vuex'
 export default {
   name: 'Main',
   components: {
@@ -43,8 +44,11 @@ export default {
   },
   watch: {
     '$route'(route) {
-      // debugger
+      this.ADD_TAG(route)
     }
+  },
+  created() {
+    this.$store.dispatch('getMenus')
   },
   mounted() {
     const _this = this
@@ -58,6 +62,9 @@ export default {
     }
   },
   methods: {
+    ...mapMutations([
+      'ADD_TAG'
+    ]),
     handleCollapsedChange(state) {
       this.collapsed = state
     }

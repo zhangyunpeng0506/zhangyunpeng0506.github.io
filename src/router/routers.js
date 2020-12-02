@@ -2,6 +2,14 @@ import Main from '@/components/main'
 
 export default [
   {
+    path: '/login',
+    name: 'login',
+    meta: {
+      title: '登录'
+    },
+    component: () => import ('@/pages/login')
+  },
+  {
     path: '/',
     name: '_home',
     redirect: '/home', // 重定向
@@ -14,6 +22,7 @@ export default [
       name: 'home',
       meta: {
         title: '首页',
+        affix: true,
         icon: 'el-icon-s-home'
       },
       component: () => import('@/pages/home')
@@ -32,10 +41,73 @@ export default [
         path: '/es6',
         name: 'es6',
         meta: {
-          title: 'ES6',
+          title: 'es6',
           icon: 'el-icon-help'
         },
-        component: () => import('@/pages/learn/_es6')
+        component: () => import('@/pages/learn/es6_')
+      },
+      {
+        path: '/git',
+        name: 'git',
+        meta: {
+          title: 'git',
+          icon: 'el-icon-help'
+        },
+        component: () => import('@/pages/learn/git_')
+      },
+      {
+        path: '/less',
+        name: 'less',
+        meta: {
+          title: 'less',
+          icon: 'el-icon-help'
+        },
+        component: () => import('@/pages/learn/less_')
+      },
+      {
+        path: '/scss',
+        name: 'scss',
+        meta: {
+          title: 'scss',
+          icon: 'el-icon-help'
+        },
+        component: () => import('@/pages/learn/scss_')
+      },
+      {
+        path: '/regular',
+        name: 'regular',
+        meta: {
+          title: 'regular',
+          icon: 'el-icon-help'
+        },
+        component: () => import('@/pages/learn/regular_')
+      },
+      {
+        path: '/typescript',
+        name: 'typescript',
+        meta: {
+          title: 'typescript',
+          icon: 'el-icon-help'
+        },
+        component: () => import('@/pages/learn/typescript_')
+      },
+      {
+        path: '/vue',
+        name: 'vue',
+        meta: {
+          title: 'vue',
+          icon: 'el-icon-help'
+        },
+        component: () => import('@/pages/learn/vue_')
+      },
+      {
+        path: '/webpack',
+        name: 'webpack',
+        meta: {
+          title: 'webpack',
+          icon: 'el-icon-help'
+        },
+        component: () => import('@/pages/learn/webpack_')
       }
     ]
   },
