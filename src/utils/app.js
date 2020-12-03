@@ -11,7 +11,7 @@ export function getMenusByRouter(routes) {
       if (route.meta.hideParent) {
         const arr = getMenusByRouter(route.children)
         res.push(...arr)
-      } else {
+      } else if (!route.meta.hide) {
         const obj = {
           path: route.path,
           title: route.meta.title || '',

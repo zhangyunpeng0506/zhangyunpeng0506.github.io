@@ -5,7 +5,8 @@ export default [
     path: '/login',
     name: 'login',
     meta: {
-      title: '登录'
+      title: '登录',
+      hide: true
     },
     component: () => import ('@/pages/login')
   },
@@ -131,6 +132,26 @@ export default [
   //     }
   //   ]
   // },
+  {
+    path: '/personal',
+    name: 'personal',
+    meta: {
+      title: '个人中心',
+      icon: 'el-icon-s-custom'
+    },
+    component: Main,
+    children: [
+      {
+        path: '/profile',
+        name: 'profile',
+        meta: {
+          title: '个人信息',
+          icon: 'el-icon-help'
+        },
+        component: () => import('@/pages/personal/profile')
+      }
+    ]
+  },
   {
     path: '*',
     component: () => import('@/components/error/404')

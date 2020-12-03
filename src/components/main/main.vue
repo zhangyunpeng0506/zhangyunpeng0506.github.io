@@ -27,6 +27,7 @@ import navBar from './components/navBar'
 import tagsView from './components/tagsView'
 import appMain from './components/appMain'
 import { mapMutations } from 'vuex'
+import { checkToken, setToken } from '@/utils/user'
 export default {
   name: 'Main',
   components: {
@@ -55,6 +56,7 @@ export default {
     this.timer = setInterval(() => {
       _this.date = new Date()
     }, 1000)
+    window.addEventListener('click', this.updateToken)
   },
   beforeDestroy() {
     if (this.timer) {
@@ -67,6 +69,11 @@ export default {
     ]),
     handleCollapsedChange(state) {
       this.collapsed = state
+    },
+    updateToken() {
+      if (checkToken()) {
+        setToken()
+      }
     }
   }
 }
