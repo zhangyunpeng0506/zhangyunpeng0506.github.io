@@ -112,26 +112,62 @@ export default [
       }
     ]
   },
-  // {
-  //   path: '/questions',
-  //   name: 'questions',
-  //   meta: {
-  //     title: '常见问题',
-  //     icon: ''
-  //   },
-  //   component: Main,
-  //   children: [
-  //     {
-  //       path: '/browser',
-  //       name: 'browser',
-  //       meta: {
-  //         title: '浏览器',
-  //         icon: '',
-  //       },
-  //       component: () => import('')
-  //     }
-  //   ]
-  // },
+  {
+    path: '/questions',
+    name: 'questions',
+    meta: {
+      title: '问题归纳',
+      icon: 'el-icon-question'
+    },
+    component: Main,
+    children: [
+      {
+        path: '/q_browser',
+        name: 'q_browser',
+        meta: {
+          title: 'browser',
+          icon: 'el-icon-help'
+        },
+        component: () => import('@/pages/questions/browser_')
+      },
+      {
+        path: '/q_css',
+        name: 'q_css',
+        meta: {
+          title: 'css',
+          icon: 'el-icon-help'
+        },
+        component: () => import('@/pages/questions/css_')
+      },
+      {
+        path: '/q_html',
+        name: 'q_html',
+        meta: {
+          title: 'html',
+          icon: 'el-icon-help'
+        },
+        component: () => import('@/pages/questions/html_')
+      },
+      {
+        path: '/q_js',
+        name: 'q_js',
+        meta: {
+          title: 'js',
+          icon: 'el-icon-help'
+        },
+        component: () => import('@/pages/questions/js_')
+      },
+      {
+        path: '/q_vue',
+        name: 'q_vue',
+        meta: {
+          title: 'vue',
+          icon: 'el-icon-help'
+        },
+        component: () => import('@/pages/questions/vue_')
+      }
+    ]
+  },
   {
     path: '/personal',
     name: 'personal',

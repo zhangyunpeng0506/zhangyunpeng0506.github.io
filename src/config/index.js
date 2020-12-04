@@ -5,5 +5,5 @@ export default {
   useDBMenu: false,
 
   // 登录超时时间（分钟）
-  timeout: 5
+  timeout: 500
 }

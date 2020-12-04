@@ -36,9 +36,14 @@
       </el-breadcrumb>
     </div>
     <div class="userinfo-container">
+      <div class="tools">
+        <el-tooltip content="源码地址" effect="dark" placement="bottom">
+          <svg-icon class="icon" icon-class="github" @click.native="handleGoto"/>
+        </el-tooltip>
+      </div>
       <el-dropdown @command="handleCommand">
         <span class="user-info">
-          <el-avatar :size="30" :src="imgUrl" style="margin-right:10px"/>
+          <el-avatar :size="30" :src="imgUrl" style="margin-right:10px" shape="square"/>
           {{ $store.state.user.userName }}
           <i class="el-icon-arrow-down el-icon--right"/>
         </span>
@@ -63,7 +68,8 @@ export default {
   },
   data() {
     return {
-      imgUrl: imgUrl
+      imgUrl: imgUrl,
+      gitUrl: 'https://github.com/zhangyunpeng0506/zhangyunpeng0506.github.io'
     }
   },
   methods: {
@@ -89,6 +95,9 @@ export default {
           })
           break
       }
+    },
+    handleGoto() {
+      window.open(this.gitUrl)
     }
   }
 }
@@ -108,6 +117,12 @@ export default {
       position: absolute;
       right: 35px;
       cursor: pointer;
+      .tools{
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        font-size: 20px;
+      }
       .user-info{
         font-size: 16px;
         font-weight: 700;

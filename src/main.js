@@ -5,8 +5,9 @@ import store from '@/store'
 import elementUI from 'element-ui'
 import $http from '@/http'
 import moment from 'moment'
+import '@/icons'
 import 'element-ui/lib/theme-chalk/index.css'
-import './index.less'
+import '@/index.less'
 if (process.env.NODE_ENV !== 'production') require('@/mock')
 
 Vue.config.productionTip = false

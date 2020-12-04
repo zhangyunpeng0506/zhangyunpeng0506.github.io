@@ -28,6 +28,7 @@
     "less": "^3.11.1",
     "less-loader": "^6.1.0",
     "mockjs": "^1.1.0",
+    "svg-sprite-loader": "^5.0.0",
     "vue-template-compiler": "^2.6.11"
   }
 }
