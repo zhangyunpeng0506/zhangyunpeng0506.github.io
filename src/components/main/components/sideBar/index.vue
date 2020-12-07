@@ -13,7 +13,7 @@
         :default-active="$store.state.app.activeTag.path"
         router
         background-color="#545c64"
-        text-color="#fff"
+        text-color="rgb(191, 203, 217)"
         active-text-color="#ffd04b"
         class="el-custom-menu">
         <side-item :menus="menus" :collapsed="collapsed"/>
@@ -54,14 +54,14 @@ export default {
     color: #fff;
     height: 100%;
     overflow: hidden;
-    /deep/i {
-      color: white;
-    }
     .sidebar-title{
       line-height: 44px;
       font-size: 16px;
       text-align: center;
       background-color: #367fa9;
+    }
+    i {
+      color: rgb(191, 203, 217);
     }
     .sidebar-menus{
       height: calc(~'100% - 44px');
