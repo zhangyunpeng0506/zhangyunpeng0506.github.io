@@ -50,6 +50,12 @@ export default {
     titleBar,
     codeTpl
   },
+  props: {
+    path: {
+      type: String | Number,
+      default: ''
+    }
+  },
   data() {
     return {
       code: code
@@ -57,7 +63,7 @@ export default {
   },
   methods: {
     handlePointClick() {
-      this.$emit('on-click', '变量')
+      this.$emit('on-click', this.path)
     }
   }
 }
