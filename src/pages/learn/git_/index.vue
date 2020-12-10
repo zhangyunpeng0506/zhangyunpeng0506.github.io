@@ -45,8 +45,9 @@
           <ul>
             <li>1、git是分布式版本控制系统，svn是集中式版本控制系统（有一个单一集中管理的服务器，保存所有记录）</li>
             <li>2、git把内容按元数据方式存储，svn是按文件</li>
-            <li>3、git分支和svn分支不同</li>
+            <li>3、git分支和svn分支不同。git工作区下的.git目录是版本库</li>
             <li>4、git没有全局版本号；svn每个版本库有唯一的URL（官方地址），所有人都在这个地址更新和提交</li>
+            <li>5、git面对一个庞大的项目也只能全部检出，而svn则可以将某个目录单独检出</li>
           </ul>
           <el-link
             href="https://www.cnblogs.com/Sungeek/p/9152223.html"
