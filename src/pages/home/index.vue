@@ -35,7 +35,8 @@ export default {
         { name: 'vue-codemirror', path: 'https://blog.csdn.net/weixin_43080277/article/details/83860629' },
         { name: 'codemirror-mergeView', path: 'https://blog.csdn.net/ryleelouth/article/details/104656081?utm_medium=distribute.pc_relevant.none-task-blog-title-2&spm=1001.2101.3001.4242' },
         { name: 'moment.js', path: 'http://momentjs.cn/' },
-        { name: '阿里图标库', path: 'https://www.iconfont.cn/search/index' }
+        { name: '阿里图标库', path: 'https://www.iconfont.cn/search/index' },
+        { name: '菜鸟教程', path: 'https://www.runoob.com/' }
       ]
     }
   },

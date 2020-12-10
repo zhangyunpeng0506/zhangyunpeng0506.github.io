@@ -2,7 +2,7 @@
   <div class="titlebar">
     <h3>
       <a
-        :id="title"
+        :id="'point'+$store.state.learn.es6.indexOf(title)"
         @click="handlePointClick">
         {{ title }}
       </a>
@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     handlePointClick() {
-      this.$emit('on-click', this.title)
+      this.$emit('on-click')
     }
   }
 }

@@ -40,7 +40,7 @@ export default {
     },
     mode: {
       type: String,
-      default: 'text/html'
+      default: 'javascript'
     },
     readOnly: {
       type: Boolean,

@@ -15,21 +15,15 @@
         <b>var都有哪些问题：</b>
         <ul>
           <li>1.可以重复声明</li>
-          <code-tpl
-            :content="code.code0"
-            mode="javascript"/>
+          <code-tpl :content="code.code0"/>
           <li>2.没有块级作用域</li>
-          <code-tpl
-            :content="code.code1"
-            mode="javascript"/>
+          <code-tpl :content="code.code1"/>
           <li>3.没有常量，即无法限制其被修改</li>
         </ul>
       </p>
       <p>
         <b>let和const：</b><br>
-        <code-tpl
-          :content="code.code2"
-          mode="javascript"/>
+        <code-tpl :content="code.code2"/>
       </p>
       <p>
         <b>总结：</b><br>

@@ -62,6 +62,7 @@ export default {
     if (this.timer) {
       clearInterval(this.timer)
     }
+    window.removeEventListener('click')
   },
   methods: {
     ...mapMutations([
