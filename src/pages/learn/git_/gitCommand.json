@@ -1,0 +1,110 @@
+[
+  {
+    "cmd": "git init",
+    "des": "在当前目录初始化一个git仓库"
+  },
+  {
+    "cmd": "git init (filename)",
+    "des": "在指定目录初始化一个git仓库"
+  },
+  {
+    "cmd": "git add *.c",
+    "des": "将以.c结尾的文件提交到暂存区"
+  },
+  {
+    "cmd": "git commit -m '注释'",
+    "des": "将暂存区文件提交到仓库并添加注释"
+  },  
+  {
+    "cmd": "git reset",
+    "des": "回退版本"
+  },
+  {
+    "cmd": "git reset HEAD --(filename)",
+    "des": "拉取最近一次提交到版本库的文件到暂存区，并且不影响工作区"
+  },  
+  {
+    "cmd": "git diff",
+    "des": "比较文件的不同"
+  },
+  {
+    "cmd": "git log",
+    "des": "查看历史提交记录"
+  },  
+  {
+    "cmd": "git log --oneline",
+    "des": "查看简洁提交记录"
+  },
+  {
+    "cmd": "git log --graph",
+    "des": "查看历史中什么时候出现了分支、合并"
+  },
+  {
+    "cmd": "git log reverse",
+    "des": "倒序显示所有提交记录"
+  },
+  {
+    "cmd": "git log --author=(authorname)",
+    "des": "查看指定用户的提交记录"
+  },
+  {
+    "cmd": "git blame (filename)",
+    "des": "以列表形式查看指定文件的提交记录"
+  },
+  {
+    "cmd": "git push",
+    "des": "将本地库分支版本上传到远程并合并"
+  },  
+  {
+    "cmd": "git pull",
+    "des": "从远程库获取代码并合并到本地版本"
+  },
+  {
+    "cmd": "git pull origin master:(branchname)",
+    "des": "将远程主机origin的master分支拉取与本地(branchname)分支合并"
+  },  
+  {
+    "cmd": "git pull origin master",
+    "des": "远程主机origin的master分支与当前分支合并，冒号后面部分可以省略"
+  },
+  {
+    "cmd": "git fetch (branchname)",
+    "des": "获取远程(branchname)分支代码"
+  },  
+  {
+    "cmd": "git fetch -p",
+    "des": "清理本地无效分支（远程已删除但本地没有删除的分支）"
+  },
+  {
+    "cmd": "git merge (branchname)",
+    "des": "将指定分支代码合并到当前分支"
+  },  
+  {
+    "cmd": "git branch",
+    "des": "列出本地分支"
+  },
+  {
+    "cmd": "git branch -a",
+    "des": "列出全部分支（包含本地和远程）"
+  },
+  {
+    "cmd": "git branch (branchname)",
+    "des": "创建分支(branchname)"
+  },
+  {
+    "cmd": "git branch -d (branchname)",
+    "des": "删除本地(branchname)分支"
+  },  
+  {
+    "cmd": "git push origin --delete (branchname)",
+    "des": "删除远程分支（删除远程分支时，同名的本地分支不会被删除，因此需要单独删除本地同名分支）"
+  },
+  {
+    "cmd": "git checkout (branchname)",
+    "des": "切换分支。当切换分支git会用该分支最后提交的快照替换本地工作目录中的内容，因此多个分支不需要多个目录"
+  },  
+  {
+    "cmd": "git checkout -b (branchname)",
+    "des": "创建分支(branchname)并切换到该分支"
+  }
+]
