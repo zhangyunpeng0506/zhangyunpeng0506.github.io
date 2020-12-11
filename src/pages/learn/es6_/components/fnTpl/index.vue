@@ -25,7 +25,7 @@
 
 <script>
 import titleBar from '../titleBar'
-import codeTpl from '../codeTpl'
+import codeTpl from '_c/codeTpl'
 import * as code from './code'
 export default {
   components: {

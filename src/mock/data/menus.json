@@ -51,8 +51,8 @@
         "icon": "el-icon-help"
       },
       {
-        "path": "/regular",
-        "title": "regular",
+        "path": "/regexp",
+        "title": "regexp",
         "icon": "el-icon-help"
       }
     ]

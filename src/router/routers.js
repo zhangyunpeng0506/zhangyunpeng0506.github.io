@@ -75,13 +75,13 @@ export default [
         component: () => import('@/pages/learn/scss_')
       },
       {
-        path: '/regular',
-        name: 'regular',
+        path: '/regexp',
+        name: 'regexp',
         meta: {
-          title: 'regular',
+          title: 'regexp',
           icon: 'el-icon-help'
         },
-        component: () => import('@/pages/learn/regular_')
+        component: () => import('@/pages/learn/regexp_')
       },
       {
         path: '/typescript',
