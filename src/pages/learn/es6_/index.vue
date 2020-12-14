@@ -19,7 +19,7 @@
       <data-structure-tpl ref="point4" path="point4" @on-click="handleGoto"/>
       <string-tpl ref="point5" path="point5" @on-click="handleGoto"/>
       <json-tpl ref="point6" path="point6" @on-click="handleGoto"/>
-      <obj-tpl ref="point7" path="point7" @on-click="handleGoto"/>
+      <class-tpl ref="point7" path="point7" @on-click="handleGoto"/>
       <promise-tpl ref="point8" path="point8" @on-click="handleGoto"/>
       <generator-tpl ref="point9" path="point9" @on-click="handleGoto"/>
       <await-tpl ref="point10" path="point10" @on-click="handleGoto"/>
@@ -37,7 +37,7 @@ import {
   dataStructureTpl,
   stringTpl,
   jsonTpl,
-  objTpl,
+  classTpl,
   promiseTpl,
   generatorTpl,
   awaitTpl,
@@ -52,7 +52,7 @@ export default {
     dataStructureTpl,
     stringTpl,
     jsonTpl,
-    objTpl,
+    classTpl,
     promiseTpl,
     generatorTpl,
     awaitTpl,
