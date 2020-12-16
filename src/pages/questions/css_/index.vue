@@ -8,6 +8,9 @@
               {{ question }}
             </div>
           </template>
+          <div class="content">
+            <content-main :question="question"/>
+          </div>
         </el-collapse-item>
       </template>
     </el-collapse>
@@ -15,7 +18,11 @@
 </template>
 
 <script>
+import contentMain from './content'
 export default {
+  components: {
+    contentMain
+  },
   data() {
     return {
       questions: this.$store.state.questions.css,

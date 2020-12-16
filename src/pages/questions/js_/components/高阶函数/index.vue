@@ -1,5 +1,5 @@
 <template>
-  <div>网络安全</div>
+  <div>高阶函数</div>
 </template>
 
 <script>

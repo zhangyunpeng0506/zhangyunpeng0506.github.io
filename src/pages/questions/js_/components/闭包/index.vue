@@ -1,5 +1,5 @@
 <template>
-  <div>http与https</div>
+  <div>闭包</div>
 </template>
 
 <script>

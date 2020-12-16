@@ -1,5 +1,5 @@
 <template>
-  <div>http状态码</div>
+  <div>函数式组件</div>
 </template>
 
 <script>

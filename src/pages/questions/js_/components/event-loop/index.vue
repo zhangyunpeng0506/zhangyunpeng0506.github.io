@@ -1,5 +1,5 @@
 <template>
-  <div>cookie、token</div>
+  <div>event-loop</div>
 </template>
 
 <script>

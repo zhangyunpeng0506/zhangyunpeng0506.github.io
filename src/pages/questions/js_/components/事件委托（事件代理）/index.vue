@@ -1,5 +1,5 @@
 <template>
-  <div>进程与线程</div>
+  <div>事件委托（事件代理）</div>
 </template>
 
 <script>

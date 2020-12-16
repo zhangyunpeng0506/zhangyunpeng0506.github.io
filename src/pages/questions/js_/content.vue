@@ -1,5 +1,5 @@
 <template>
-  <div class="browser-content-container">
+  <div class="js-content-container">
     <question0 v-if="question===questions[0]"/>
     <question1 v-if="question===questions[1]"/>
     <question2 v-if="question===questions[2]"/>
@@ -9,6 +9,13 @@
     <question6 v-if="question===questions[6]"/>
     <question7 v-if="question===questions[7]"/>
     <question8 v-if="question===questions[8]"/>
+    <question9 v-if="question===questions[9]"/>
+    <question10 v-if="question===questions[10]"/>
+    <question11 v-if="question===questions[11]"/>
+    <question12 v-if="question===questions[12]"/>
+    <question13 v-if="question===questions[13]"/>
+    <question14 v-if="question===questions[14]"/>
+    <question15 v-if="question===questions[15]"/>
   </div>
 </template>
 
@@ -22,7 +29,14 @@ import {
   question5,
   question6,
   question7,
-  question8
+  question8,
+  question9,
+  question10,
+  question11,
+  question12,
+  question13,
+  question14,
+  question15
 } from './components'
 export default {
   components: {
@@ -34,7 +48,14 @@ export default {
     question5,
     question6,
     question7,
-    question8
+    question8,
+    question9,
+    question10,
+    question11,
+    question12,
+    question13,
+    question14,
+    question15
   },
   props: {
     question: {
@@ -44,14 +65,14 @@ export default {
   },
   data() {
     return {
-      questions: this.$store.state.questions.browser
+      questions: this.$store.state.questions.js
     }
   }
 }
 </script>
 
 <style lang="less" scoped>
-  .browser-content-container{
+  .js-content-container{
     /deep/p{
       margin: 10px 10px 10px 0;
       padding: 5px 10px;

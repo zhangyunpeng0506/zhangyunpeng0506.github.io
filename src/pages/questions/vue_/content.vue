@@ -1,5 +1,5 @@
 <template>
-  <div class="browser-content-container">
+  <div class="vue-content-container">
     <question0 v-if="question===questions[0]"/>
     <question1 v-if="question===questions[1]"/>
     <question2 v-if="question===questions[2]"/>
@@ -9,6 +9,7 @@
     <question6 v-if="question===questions[6]"/>
     <question7 v-if="question===questions[7]"/>
     <question8 v-if="question===questions[8]"/>
+    <question9 v-if="question===questions[9]"/>
   </div>
 </template>
 
@@ -22,7 +23,8 @@ import {
   question5,
   question6,
   question7,
-  question8
+  question8,
+  question9
 } from './components'
 export default {
   components: {
@@ -34,7 +36,8 @@ export default {
     question5,
     question6,
     question7,
-    question8
+    question8,
+    question9
   },
   props: {
     question: {
@@ -44,14 +47,14 @@ export default {
   },
   data() {
     return {
-      questions: this.$store.state.questions.browser
+      questions: this.$store.state.questions.vue
     }
   }
 }
 </script>
 
 <style lang="less" scoped>
-  .browser-content-container{
+  .vue-content-container{
     /deep/p{
       margin: 10px 10px 10px 0;
       padding: 5px 10px;
