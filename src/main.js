@@ -6,13 +6,14 @@ import elementUI from 'element-ui'
 import $http from '@/http'
 import moment from 'moment'
 import VueCodeMirror from 'vue-codemirror'
+import config from '@/config'
 import 'codemirror/lib/codemirror.css'
 import '@/icons'
 import 'element-ui/lib/theme-chalk/index.css'
 import '@/index.less'
-if (process.env.NODE_ENV !== 'production') require('@/mock')
+if (process.env.NODE_ENV !== 'production' && config.useMock) require('@/mock')
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false // 阻止启动生产消息
 
 Vue.use(elementUI)
 Vue.use(VueCodeMirror)

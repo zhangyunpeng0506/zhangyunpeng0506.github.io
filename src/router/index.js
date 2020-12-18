@@ -32,9 +32,11 @@ router.beforeEach((to, from, next) => {
   } else if (token && to.name === LOGININ_NAME) { // 已登录且跳转登录页
     next({ name: HOME_NAME })
   } else {
-    store.commit('ADD_TAG', to)
-    store.commit('SET_ACTIVE_TAG', to)
-    next()
+    store.dispatch('getLocation').then(res => {
+      store.commit('ADD_TAG', to)
+      store.commit('SET_ACTIVE_TAG', to)
+      next()
+    })
   }
 })
 
