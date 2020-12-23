@@ -8,7 +8,7 @@ export default [
       title: '登录',
       hide: true
     },
-    component: () => import ('@/pages/login')
+    component: () => import ('@/views/login')
   },
   {
     path: '/',
@@ -26,7 +26,7 @@ export default [
         affix: true,
         icon: 'el-icon-s-home'
       },
-      component: () => import('@/pages/home')
+      component: () => import('@/views/home')
     }]
   },
   {
@@ -45,7 +45,7 @@ export default [
           title: 'es6',
           icon: 'el-icon-help'
         },
-        component: () => import('@/pages/learn/es6_')
+        component: () => import('@/views/learn/es6_')
       },
       {
         path: '/git',
@@ -54,7 +54,7 @@ export default [
           title: 'git',
           icon: 'el-icon-help'
         },
-        component: () => import('@/pages/learn/git_')
+        component: () => import('@/views/learn/git_')
       },
       {
         path: '/less',
@@ -63,7 +63,7 @@ export default [
           title: 'less',
           icon: 'el-icon-help'
         },
-        component: () => import('@/pages/learn/less_')
+        component: () => import('@/views/learn/less_')
       },
       {
         path: '/scss',
@@ -72,7 +72,7 @@ export default [
           title: 'scss',
           icon: 'el-icon-help'
         },
-        component: () => import('@/pages/learn/scss_')
+        component: () => import('@/views/learn/scss_')
       },
       {
         path: '/regexp',
@@ -81,7 +81,7 @@ export default [
           title: 'regexp',
           icon: 'el-icon-help'
         },
-        component: () => import('@/pages/learn/regexp_')
+        component: () => import('@/views/learn/regexp_')
       },
       {
         path: '/typescript',
@@ -90,7 +90,7 @@ export default [
           title: 'typescript',
           icon: 'el-icon-help'
         },
-        component: () => import('@/pages/learn/typescript_')
+        component: () => import('@/views/learn/typescript_')
       },
       {
         path: '/vue',
@@ -99,7 +99,7 @@ export default [
           title: 'vue',
           icon: 'el-icon-help'
         },
-        component: () => import('@/pages/learn/vue_')
+        component: () => import('@/views/learn/vue_')
       },
       {
         path: '/webpack',
@@ -108,7 +108,7 @@ export default [
           title: 'webpack',
           icon: 'el-icon-help'
         },
-        component: () => import('@/pages/learn/webpack_')
+        component: () => import('@/views/learn/webpack_')
       }
     ]
   },
@@ -128,7 +128,7 @@ export default [
           title: 'browser',
           icon: 'el-icon-help'
         },
-        component: () => import('@/pages/questions/browser_')
+        component: () => import('@/views/questions/browser_')
       },
       {
         path: '/q_css',
@@ -137,7 +137,7 @@ export default [
           title: 'css',
           icon: 'el-icon-help'
         },
-        component: () => import('@/pages/questions/css_')
+        component: () => import('@/views/questions/css_')
       },
       {
         path: '/q_html',
@@ -146,7 +146,7 @@ export default [
           title: 'html',
           icon: 'el-icon-help'
         },
-        component: () => import('@/pages/questions/html_')
+        component: () => import('@/views/questions/html_')
       },
       {
         path: '/q_js',
@@ -155,7 +155,7 @@ export default [
           title: 'js',
           icon: 'el-icon-help'
         },
-        component: () => import('@/pages/questions/js_')
+        component: () => import('@/views/questions/js_')
       },
       {
         path: '/q_vue',
@@ -164,7 +164,7 @@ export default [
           title: 'vue',
           icon: 'el-icon-help'
         },
-        component: () => import('@/pages/questions/vue_')
+        component: () => import('@/views/questions/vue_')
       }
     ]
   },
@@ -184,7 +184,7 @@ export default [
           title: '个人信息',
           icon: 'el-icon-help'
         },
-        component: () => import('@/pages/personal/profile')
+        component: () => import('@/views/personal/profile')
       }
     ]
   },
