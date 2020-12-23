@@ -5,5 +5,8 @@ export default {
   useDBMenu: false,
 
   // 登录超时时间（分钟）
-  timeout: 15
+  timeout: 15,
+
+  // 是否使用mock
+  useMock: false
 }

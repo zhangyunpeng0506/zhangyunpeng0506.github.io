@@ -25,4 +25,8 @@ export const code2 =
   content: '';
   display: table;
   clear: both;
+}
+
+.parent1{
+  *zoom: 1  /*ie6清除浮动的方式，*只用ie6-ie7执行，其他浏览器不执行*/
 }`

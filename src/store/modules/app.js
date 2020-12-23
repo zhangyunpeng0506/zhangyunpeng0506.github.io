@@ -6,6 +6,7 @@ import { routeHasExit, getMenusByRouter } from '@/utils/app'
 const app = {
   state: {
     version: 'v1.0.0',
+    gitHub: 'https://github.com/zhangyunpeng0506/zhangyunpeng0506.github.io',
     baseUrl: '',
     menus: [],
     tagList: [],

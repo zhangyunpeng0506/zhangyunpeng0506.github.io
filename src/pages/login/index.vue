@@ -139,7 +139,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('~@/static/img/background.png') no-repeat;
+    background: url('~@/assets/img/background.png') no-repeat;
     background-size: 100% 100%;
     .login-bar{
       display: flex;

@@ -1,23 +1,43 @@
 <template>
   <div class="css-content-container">
-    <question0 v-if="question===questions[0]"/>
-    <question1 v-if="question===questions[1]"/>
-    <question2 v-if="question===questions[2]"/>
-    <question3 v-if="question===questions[3]"/>
-    <question4 v-if="question===questions[4]"/>
-    <question5 v-if="question===questions[5]"/>
-    <question6 v-if="question===questions[6]"/>
-    <question7 v-if="question===questions[7]"/>
-    <question8 v-if="question===questions[8]"/>
-    <question9 v-if="question===questions[9]"/>
-    <question10 v-if="question===questions[10]"/>
-    <question11 v-if="question===questions[11]"/>
-    <question12 v-if="question===questions[12]"/>
-    <question13 v-if="question===questions[13]"/>
-    <question14 v-if="question===questions[14]"/>
-    <question15 v-if="question===questions[15]"/>
-    <question16 v-if="question===questions[16]"/>
-    <question17 v-if="question===questions[17]"/>
+    <!-- @media -->
+    <question0 v-if="question==='@media'"/>
+    <!-- 垂直居中 -->
+    <question1 v-if="question==='垂直居中'"/>
+    <!-- 多行文本省略 -->
+    <question2 v-if="question==='多行文本省略'"/>
+    <!-- 盒子模型 -->
+    <question3 v-if="question==='盒子模型'"/>
+    <!-- 块级元素和行内元素 -->
+    <question4 v-if="question==='块级元素和行内元素'"/>
+    <!-- 浏览器渲染全过程（含重绘重排） -->
+    <question5 v-if="question==='浏览器渲染全过程（含重绘重排）'"/>
+    <!-- 清除浮动 -->
+    <question6 v-if="question==='清除浮动'"/>
+    <!-- 优雅降级和渐进增强 -->
+    <question7 v-if="question==='优雅降级和渐进增强'"/>
+    <!-- 元素消失的方法及区别 -->
+    <question8 v-if="question==='元素消失的方法及区别'"/>
+    <!-- BFC -->
+    <question9 v-if="question==='BFC'"/>
+    <!-- css3新特性 -->
+    <question10 v-if="question==='css3新特性'"/>
+    <!-- css布局 -->
+    <question11 v-if="question==='css布局'"/>
+    <!-- css选择器优先级 -->
+    <question12 v-if="question==='css选择器优先级'"/>
+    <!-- flex布局 -->
+    <question13 v-if="question==='flex布局'"/>
+    <!-- line-height与height -->
+    <question14 v-if="question==='line-height与height'"/>
+    <!-- link和import标签区别 -->
+    <question15 v-if="question==='link和import标签区别'"/>
+    <!-- position属性比较 -->
+    <question16 v-if="question==='position属性比较'"/>
+    <!-- transition和animation的区别 -->
+    <question17 v-if="question==='transition和animation的区别'"/>
+    <!-- margin越界 -->
+    <question18 v-if="question==='margin越界'"/>
   </div>
 </template>
 
@@ -40,7 +60,8 @@ import {
   question14,
   question15,
   question16,
-  question17
+  question17,
+  question18
 } from './components'
 export default {
   components: {
@@ -61,7 +82,8 @@ export default {
     question14,
     question15,
     question16,
-    question17
+    question17,
+    question18
   },
   props: {
     question: {

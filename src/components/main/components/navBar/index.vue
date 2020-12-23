@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import imgUrl from '@/static/img/admin.png'
+import imgUrl from '@/assets/img/admin.png'
 import { mapActions } from 'vuex'
 export default {
   props: {
@@ -69,7 +69,7 @@ export default {
   data() {
     return {
       imgUrl: imgUrl,
-      gitUrl: 'https://github.com/zhangyunpeng0506/zhangyunpeng0506.github.io'
+      gitUrl: this.$store.state.app.gitHub
     }
   },
   methods: {
