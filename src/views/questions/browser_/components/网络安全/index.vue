@@ -12,7 +12,14 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      list: [
+        `xss分类： 存储型XSS、反射型XSS、DOM型
+         防御：转译、限制输入长度`
+      ]
+    }
+  }
 }
 </script>
 

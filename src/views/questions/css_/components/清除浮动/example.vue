@@ -5,6 +5,7 @@
         <div class="child">
           额外标签法
         </div>
+        <div style="width:40px;height:40px">参考</div>
         <div style="clear:both"/>
       </div>
       <code-tpl :content="code.code0"/>
@@ -23,6 +24,9 @@
       <div class="parent1">
         <div class="child1">
           伪元素
+        </div>
+        <div class="otherChild">
+          参考
         </div>
       </div>
       <code-tpl :content="code.code2"/>
@@ -64,14 +68,18 @@ export default {
       background: red;
       margin-bottom: 5px;
       .child1{
-        float: left;
+        float: right;
         width: 100px;
         height: 50px;
         background: greenyellow;
       }
+      .otherChild{
+        height: 40px;
+        width: 40px;
+        background: white;
+      }
     }
-    .parent1::after,
-    .parent1::before{
+    .parent1::after{
       content: '';
       display: table;
       clear: both;

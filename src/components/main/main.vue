@@ -14,9 +14,7 @@
         <router-view :key="$route.path"/>
       </el-main>
       <el-footer class="footer-container">
-        <audio loop autoplay>
-          <source src="">
-        </audio>
+        <!-- <audio loop autoplay src="~@/assets/audio/回梦游仙.mp3"/> -->
         <span>版权所有 zhangyunpeng</span>
         {{ $moment(date).format('HH:mm:ss') }}
       </el-footer>

@@ -1,12 +1,14 @@
 <template>
-  <div>设计模式</div>
+  <div/>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      // 发布订阅模式（观察者模式）
+      list: [
+        '普通函数this最终指向的是那个直接调用它的对象'
+      ]
     }
   }
 }

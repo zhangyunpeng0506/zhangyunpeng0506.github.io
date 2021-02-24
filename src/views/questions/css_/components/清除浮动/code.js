@@ -20,8 +20,7 @@ export const code2 =
   </div>
 </div>
 
-.parent1::after,
-.parent1::before{
+.parent1::after{
   content: '';
   display: table;
   clear: both;

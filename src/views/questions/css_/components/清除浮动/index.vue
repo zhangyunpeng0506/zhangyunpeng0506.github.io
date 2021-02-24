@@ -32,9 +32,9 @@ export default {
     return {
       define: '浮动即元素设置了float，父元素未设置高度或宽度，而引起父元素的塌陷',
       methodsList: [
-        '额外标签法',
+        '额外标签法（在浮动元素后，可以不是紧跟着加一个标签，给其设置clear:both）',
         '设置父元素属性，使其形成一个BFC（overflow设置除visible以外的属性，display:inline-block,inline-flex,flex,table-cell,table-caption）',
-        '伪元素'
+        '伪元素（设置父元素的伪元素样式），原理与额外标签类似'
       ]
     }
   }

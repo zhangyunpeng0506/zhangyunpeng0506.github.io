@@ -12,7 +12,7 @@ const questions = {
       'http状态码'
     ],
     html: [
-      'h5新特性'
+      'HTML5新特性'
     ],
     css: [
       '盒子模型',

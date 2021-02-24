@@ -49,6 +49,19 @@ export default {
         { name: '菜鸟教程', path: 'https://www.runoob.com/' },
         { name: 'node入门教程', path: 'http://nodejs.cn/learn/introduction-to-nodejs' },
         { name: '腾讯位置服务', path: 'https://lbs.qq.com/dev/console/user/info' }
+      ],
+      list: [
+        '字节跳动',
+        '大疆',
+        '平安科技',
+        'Shopee',
+        '网易',
+        '腾讯',
+        '阿里',
+        '腾讯',
+        '京东',
+        '百度',
+        '滴滴'
       ]
     }
   },

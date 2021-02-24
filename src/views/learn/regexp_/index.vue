@@ -82,7 +82,8 @@ export default {
         'm': '多行匹配'
       },
       methods: {
-        'exec()': 'RegExpObject.exec(string)，检索字符串中的正则表达式的匹配，有匹配返回该匹配，否则返回null',
+        'exec()': `RegExpObject.exec(string)，检索字符串中的正则表达式的匹配，有匹配返回该匹配(数组)，否则返回null；
+                  与match方法类似，这个方法只会执行一次，加上修饰符 g 也只会执行一次，当再次调用的时候会从上次查询到的位置继续往后查。`,
         'test()': 'RegExpObject.test(string)，检测字符串是否匹配某个模式，匹配返回true，否则返回false',
         'toString()': '返回正则表达式的字符串值'
       }
